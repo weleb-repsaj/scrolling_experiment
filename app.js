@@ -1,7 +1,7 @@
 // INTRO SECTION
 const intro = document.querySelector('.intro');
 const video = intro.querySelector('video');
-const text = intro.querySelector('h1');
+const text = intro.querySelector('.title');
 
 // END SECTION
 const section = document.querySelector('section');
@@ -11,13 +11,13 @@ const end = section.querySelector('h1');
 const controller = new ScrollMagic.Controller();
 
 // Scenes: like a section of animations
-const scene = new ScrollMagic.Scene({
-    duration: 6000,
+let scene = new ScrollMagic.Scene({
+    duration: 6000, // scene lasts for 6000px
     triggerElement: intro,
     triggerHook: 0
 })
-    .addIndicators()
-    .setPin(intro)
+    //.addIndicators()
+    .setPin(intro) // pins video to viewport for duration
     .addTo(controller);
 
 // Video Animation

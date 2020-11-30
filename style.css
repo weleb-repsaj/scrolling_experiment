@@ -2,14 +2,52 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Gayathri", sans-serif;
+  color: white;
 }
 
-body {
-  font-family: sans-serif;
+.gallery {
+  position: absolute;
+  z-index: 100;
+  margin-top: 5%;
+  height: 200vh;
+}
+
+.gallery img {
+  width: 37vw;
+  height: 70vh;
+  min-width: 370px;
+  min-height: 700px;
+  display: block;
+}
+
+#img1 {
+  float: right;
+  margin-right: 5vw;
+}
+
+#img2 {
+  float: left;
+  margin-top: 150%;
+  margin-left: 4vw;
+}
+
+#img3 {
+  float: right;
+  margin-top: 200%;
+  margin-right: 5vw;
+}
+
+#img4 {
+  float: left;
+  margin-top: 250%;
+  margin-left: 4vw;
 }
 
 .intro {
   height: 100vh;
+  z-index: 0;
+  position: relative;
 }
 
 .intro video {
@@ -18,20 +56,33 @@ body {
   object-fit: cover;
 }
 
-.intro h1 {
+.info h1 {
   position: absolute;
-  top: 40%;
-  left: 50%;
-  font-size: 5vw;
+  top: 10%;
+  left: 20%;
+  font-size: 3vw;
+  font-weight: bolder;
   color: white;
+  transform: translate(-50%, -50%);
+  margin-left: auto;
+}
+
+.info p {
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  font-size: 1rem;
+  font-weight: lighter;
   transform: translate(-50%, -50%);
 }
 
 section {
-  height: 100vh;
+  height: 1vh;
+  background-color: black;
 }
 
 section h1 {
   text-align: center;
-  padding-top: 10vh;
+  color: black;
+  font-size: 1px;
 }
