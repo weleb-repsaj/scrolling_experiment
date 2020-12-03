@@ -3,10 +3,6 @@ const intro = document.querySelector('.intro');
 const video = intro.querySelector('video');
 const text = intro.querySelector('.title');
 
-// END SECTION
-const section = document.querySelector('section');
-const end = section.querySelector('h1');
-
 //SCROLLMAGIC
 const controller = new ScrollMagic.Controller();
 
